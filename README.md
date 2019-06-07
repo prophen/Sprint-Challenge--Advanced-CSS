@@ -34,14 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+>The difference between an adaptive website and a fully responsive one is responsive units are used in a responsive site instead of only relying on hard coded widths.
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+>With mobile first, the base of the design and first layout is designed for the mobile view. More features and use of the screen real estate is added as you design for larger screens.
+Desktop first, starts with a large screen layout, then adjusts for progressively smaller screens.
+
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+
+>It allows for easy math when using the rem unit. With the root element at 62.5% 1rem = 10px. It also respects the user settings for text size in the browser which gets lost when using hard coded pixels.
+
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+>It lets you super charge your CSS styles. You can create variables, reuse styles, nest styles, and organize sections of your site in separate files. It gives you extra tools then compiles the code into regular CSS for you.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+>My favorite is parametric mixins because it makes things so clean and flexible, especially when we have to think about designing for difference screen sizes. What gives me the most trouble is nesting.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
@@ -106,15 +118,15 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
