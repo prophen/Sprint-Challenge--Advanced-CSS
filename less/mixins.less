@@ -1,1 +1,33 @@
 // Mixins Here
+
+.nav-styles() {
+  width: 100%;
+  background-color: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+}
+
+.nav-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.hover(@bg, @text) {
+  background-color: @bg;
+  color: @text;
+}
+
+.make-button(@width, @padding, @font-size,
+ @bg-color: @btn-bg-color, @color: white ) {
+
+  width: @width;
+  font-size: @font-size;
+  background-color: @bg-color;
+  color: @color;
+  border-radius: 0.5rem;
+  padding: @padding;
+  text-align: center;
+}
