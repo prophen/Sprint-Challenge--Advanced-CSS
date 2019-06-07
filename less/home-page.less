@@ -66,8 +66,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: auto;
+      padding: 2rem;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -82,12 +93,21 @@
         &:hover {
           .hover(white, @btn-bg-color);
         }
+        @media @phone {
+          .make-button(100%, 3rem, 1.8rem);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
 
       img {
         width: 100%;
