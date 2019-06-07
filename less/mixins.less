@@ -15,15 +15,19 @@
   margin: auto;
 }
 
+.hover(@bg, @text) {
+  background-color: @bg;
+  color: @text;
+}
+
 .make-button(@width, @padding, @font-size,
  @bg-color: @btn-bg-color, @color: white ) {
 
   width: @width;
-  height: @height;
   font-size: @font-size;
   background-color: @bg-color;
   color: @color;
   border-radius: 0.5rem;
-  padding: padding;
+  padding: @padding;
   text-align: center;
 }
